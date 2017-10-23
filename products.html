@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<!--Created by Aravind on 23 Oct 2017-->
+<html lang="en">
+
+<head>
+    <!--jQUERY should always come first before Bootstrap-->
+    <base target="_blank">
+    <script src="frameworks/jquery-3.2.1.js"></script>
+    <link rel="icon" href="images/dp.png">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Products : BioCare Pharma</title>
+
+    <!----------------BOOTSTRAP----------------------->
+
+    <link rel="stylesheet" href="frameworks/bootstrap.min.css">
+    <!----------------GOOGLE FONTS----------------------->
+    <link href="https://fonts.googleapis.com/css?family=Spectral" rel="stylesheet">
+    <link rel="stylesheet" href="prod_styles.css">
+    <link rel="stylesheet" href="frameworks/animate.min.css">
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-fixed-top menu">
+        <div class="container">
+            <ul class="ul" align="center">
+                <li><a href="javascript:void(0);" onclick="javascript:window.location.href='index.html';" class="hyperlink">Home</a>
+                    <li><a href="javascript:void(0);" onclick="javascript:window.location.href='about_us.html';" class="hyperlink">About Us</a></li>
+                    <li><a href="javascript:void(0);" onclick="javascript:window.location.href='products.html';" class="hyperlink">Products</a></li>
+                    <li><a href="javascript:void(0);" onclick="javascript:window.location.href='contact.html';" class="hyperlink">Contact Us</a></li>
+            </ul>
+
+            <a onclick="javascript:window.location.href='login.html';">                
+              <button id="login_btn" type="reset" class="btn">Staff Login</button>            
+            </a>
+        </div>
+    </nav>
+
+
+
+
+
+    <div ng-app="" class="container-fluid ENTIRE_PAGE">
+        <div class="row">
+            <div class="jumbotron col-md-12 col-sm-6 col-xs-6">
+
+                <div class="container jumbo_text section">
+                    <div class="animated fadeInDown">
+                        <span id="my_name">Our products</span>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="container-fluid">
+                        <div id="p_row1" class="proj_box row">
+
+                            <a href="#">
+                                <div class="col-md-4 proj_link">
+                                    <img src="images/prod_img.png" class="img-resposive proj_img"></img>
+                                    <div class="proj_title">Product Name</div>
+                                    <div class="proj_desc">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    </div>
+                                    <div class="proj_lang proj_lang_android">Category</div>
+
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="col-md-4 proj_link">
+                                    <img src="images/prod_img.png" class="img-resposive proj_img"></img>
+                                    <div class="proj_title">Product Name</div>
+                                    <div class="proj_desc">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    </div>
+                                    <div class="proj_lang proj_lang_android">Category</div>
+
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="col-md-4 proj_link">
+
+                                    <img src="images/prod_img.png" class="img-resposive proj_img"></img>
+                                    <div class="proj_title">Product Name</div>
+                                    <div class="proj_desc">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    </div>
+                                    <div class="proj_lang proj_lang_vb">Category</div>
+
+                                </div>
+                            </a>
+                        </div>
+                        <!--SECOND ROW-->
+                        <div id="p_row2" class="proj_box row">
+
+                            <a href="#">
+                                <div class="col-md-4 proj_link">
+
+                                    <img src="images/prod_img.png" class="img-resposive proj_img"></img>
+                                    <div class="proj_title">Product Name</div>
+                                    <div class="proj_desc">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    </div>
+                                    <div class="proj_lang proj_lang_java">Category</div>
+
+                                </div>
+                            </a>
+
+
+                            <a href="#">
+                                <div class="col-md-4 proj_link">
+
+                                    <img src="images/prod_img.png" class="img-resposive proj_img"></img>
+                                    <div class="proj_title">Product Name</div>
+                                    <div class="proj_desc">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    </div>
+                                    <div class="proj_lang proj_lang_py">Category</div>
+
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="col-md-4 proj_link">
+
+                                    <img src="images/prod_img.png" class="img-resposive proj_img"></img>
+                                    <div class="proj_title">Product Name</div>
+                                    <div class="proj_desc">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    </div>
+                                    <div class="proj_lang proj_lang_git">Category</div>
+
+                                </div>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="frameworks/angular.min.js"></script>
+    <script src="scripts.js"></script>
+
+    <!--script src="frameworks/particles.js"></script>
+<script src="frameworks/particles_white.js"></script-->
+
+</body>
+
+</html>

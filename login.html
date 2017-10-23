@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<!--Created by Aravind on 23 Oct 2017-->
+<html lang="en">
+
+<head>
+    <!--jQUERY should always come first before Bootstrap-->
+    <base target="_blank">
+    <script src="frameworks/jquery-3.2.1.js"></script>
+    <link rel="icon" href="images/dp.png">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Login : BioCare Pharma</title>
+
+    <!----------------BOOTSTRAP----------------------->
+
+    <link rel="stylesheet" href="frameworks/bootstrap.min.css">
+    <!----------------GOOGLE FONTS----------------------->
+    <link href="https://fonts.googleapis.com/css?family=Spectral" rel="stylesheet">
+    <link rel="stylesheet" href="contact_styles.css">
+    <link rel="stylesheet" href="frameworks/animate.min.css">
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-fixed-top menu">
+        <div class="container">
+            <ul class="ul" align="center">
+                <li><a href="javascript:void(0);" onclick="javascript:window.location.href='index.html';" class="hyperlink">Home</a>
+                    <li><a href="javascript:void(0);" onclick="javascript:window.location.href='about_us.html';" class="hyperlink">About Us</a></li>
+                    <li><a href="javascript:void(0);" onclick="javascript:window.location.href='products.html';" class="hyperlink">Products</a></li>
+                    <li><a href="javascript:void(0);" onclick="javascript:window.location.href='contact.html';" class="hyperlink">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
+
+    <div ng-app="" class="container-fluid ENTIRE_PAGE">
+        <div class="row">
+            <div class="jumbotron jumb_login col-md-12 col-sm-6 col-xs-6">
+
+                <div class="container jumbo_text section">
+                    <div class="animated fadeInDown">
+                        <span id="cont_heading" class="jumbo_text">
+  Staff Login </span>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <form class="login_form">
+                        <div class="inputbox">
+                            <span class="label">Username</span><br>
+                            <input ng-model="name" id="login_username" name="subject" class="inputtext" type="text">
+                        </div>
+                        <div class="inputbox">
+                            <span class="label">Password</span><br>
+                            <input ng-model="phone" id="login_password" class="inputtext" type="password">
+                        </div>
+
+                        <button onclick="login();" id="login_login" type="submit" class="btn">Login</button>
+                    </form>
+
+                    <script src="frameworks/angular.min.js"></script>
+                    <script src="scripts.js"></script>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--script src="frameworks/particles.js"></script>
+<script src="frameworks/particles_white.js"></script-->
+
+</body>
+
+</html>

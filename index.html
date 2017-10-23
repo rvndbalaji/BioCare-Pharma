@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<!--Created by Aravind on 23 Oct 2017-->
+<html lang="en">
+
+<head>
+    <!--jQUERY should always come first before Bootstrap-->
+    <base target="_blank">
+    <script src="frameworks/jquery-3.2.1.js"></script>
+    <link rel="icon" href="images/dp.png">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>BioCare Pharma</title>
+
+    <!----------------BOOTSTRAP----------------------->
+
+    <link rel="stylesheet" href="frameworks/bootstrap.min.css">
+    <!----------------GOOGLE FONTS----------------------->
+    <link href="https://fonts.googleapis.com/css?family=Spectral" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="frameworks/animate.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-fixed-top menu">
+        <div class="container">
+            <ul class="ul" align="center">
+                <li><a href="javascript:void(0);" onclick="javascript:window.location.href='index.html';" class="hyperlink">Home</a>
+                    <li><a href="javascript:void(0);" onclick="javascript:window.location.href='about_us.html';" class="hyperlink">About Us</a></li>
+                    <li><a href="javascript:void(0);" onclick="javascript:window.location.href='products.html';" class="hyperlink">Products</a></li>
+                    <li><a href="javascript:void(0);" onclick="javascript:window.location.href='contact.html';" class="hyperlink">Contact Us</a></li>
+            </ul>
+            <a onclick="javascript:window.location.href='login.html';">                
+              <button id="login_btn" type="reset" class="btn">Staff Login</button>            
+            </a>
+        </div>
+    </nav>
+
+
+
+
+
+    <div ng-app="" class="container-fluid ENTIRE_PAGE">
+        <div class="row">
+            <div class="jumbotron col-md-12 col-sm-6 col-xs-6">
+
+                <div class="container jumbo_text section">
+                    <div class="animated fadeInDown">
+                        <span id="my_name">BioCare Pharma</span>
+                    </div>
+                    <br><br><br>
+                    <span id="my_subtitle">> </span><br><br>
+
+                    <a href="https://www.facebook.com/rvnd.balaji" target="_blank">
+                        <img id="fb" class="social animated zoomInUp img-circle" src="images/facebook.png"></img>
+                    </a>
+
+                    <a href="https://github.com/rvndbalaji" target="_blank">
+                        <img id="gh" class="social  animated zoomInUp img-circle" src="images/github.png"></img>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/aravindbalaji/" target="_blank">
+                        <img id="li" class="social animated zoomInUp img-circle" src="images/linkedin.png"></img>
+                    </a>
+                    <!--div id ="p_white"></div-->
+                </div>
+                <div id="desc">
+                    <span>
+                        BioCare Ltd., Asia's premier biopharmaceutical company, is committed to ensure a global right to healthcare by addressing the worldwide need for safe, effective and affordable biotherapeutics. 
+
+ 
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="frameworks/angular.min.js"></script>
+    <script src="scripts.js"></script>
+
+    <!--script src="frameworks/particles.js"></script>
+<script src="frameworks/particles_white.js"></script-->
+
+</body>
+
+</html>

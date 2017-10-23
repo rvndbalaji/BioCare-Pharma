@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<!--Created by Aravind on 23 Oct 2017-->
+<html lang="en">
+
+<head>
+    <!--jQUERY should always come first before Bootstrap-->
+    <base target="_blank">
+    <script src="frameworks/jquery-3.2.1.js"></script>
+    <link rel="icon" href="images/dp.png">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Contact : BioCare Pharma</title>
+
+    <!----------------BOOTSTRAP----------------------->
+
+    <link rel="stylesheet" href="frameworks/bootstrap.min.css">
+    <!----------------GOOGLE FONTS----------------------->
+    <link href="https://fonts.googleapis.com/css?family=Spectral" rel="stylesheet">
+    <link rel="stylesheet" href="contact_styles.css">
+    <link rel="stylesheet" href="frameworks/animate.min.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-fixed-top menu">
+        <div class="container">
+            <ul class="ul" align="center">
+                <li><a href="javascript:void(0);" onclick="javascript:window.location.href='index.html';" class="hyperlink">Home</a>
+                    <li><a href="javascript:void(0);" onclick="javascript:window.location.href='about_us.html';" class="hyperlink">About Us</a></li>
+                    <li><a href="javascript:void(0);" onclick="javascript:window.location.href='products.html';" class="hyperlink">Products</a></li>
+                    <li><a href="javascript:void(0);" onclick="javascript:window.location.href='contact.html';" class="hyperlink">Contact Us</a></li>
+            </ul>
+            <a onclick="javascript:window.location.href='login.html';">                
+              <button id="login_btn" type="reset" class="btn">Staff Login</button>            
+            </a>
+        </div>
+    </nav>
+
+
+
+
+
+    <div ng-app="" class="container-fluid ENTIRE_PAGE">
+        <div class="row">
+            <div class="jumbotron col-md-12 col-sm-6 col-xs-6">
+
+                <div class="container jumbo_text section">
+                    <div class="animated fadeInDown">
+                        <span id="cont_heading" class="jumbo_text">
+    Get in touch with us </span>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div id="cont" class="col-md-12 col-sm-12 col-xs-12">
+
+
+
+                        <br><br><br>
+
+                        <div class="container-fluid last">
+                            <div class="row" align="center">
+
+                                <div class="infome col-md-6 col-xs-12">
+                                    <span class="skill_title">BioCare Pharma</span>
+                                    <br><br>
+
+                                    <div class="row">
+                                        <a href="tel:+918762315968">
+                                            <div class="col-md-4 col-xs-4">
+                                                <img src="images/mob.png" class="inf_icon img-responsive" />
+                                                <span class="inf_text">+91 8762315968</span>
+                                            </div>
+                                        </a>
+
+                                        <a href="mailto:biopharma@live.com">
+                                            <div class="col-md-4  col-xs-4">
+                                                <img src="images/mail.png" class="inf_icon img-responsive" />
+                                                <span class="inf_text">biopharma@live.com</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="row">
+                                        <br><br>
+                                        <div class="col-md-4  col-xs-4">
+                                            <img src="images/home.png" class="inf_icon img-responsive" />
+                                            <span class="inf_text">#221, Baker Street, London</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <form class="form col-md-6 col-xs-12">
+                                    <div class="inputbox">
+                                        <span class="label">What's your name?</span><br>
+                                        <input ng-model="name" id="name" name="subject" class="inputtext" type="text">
+                                    </div>
+                                    <div class="inputbox">
+                                        <span class="label">Phone Number  ( optional )</span><br>
+                                        <input ng-model="phone" id="ph" class="inputtext" type="text">
+                                    </div>
+                                    <div class="inputbox">
+                                        <span class="label">Send a message</span><br>
+                                        <textarea ng-model="body" id="msg" class="inputtext" rows="5" name="body"></textarea>
+                                    </div>
+
+                                    <a href="mailto:aravind.balaji@live.com?subject={{ name + ' - Message from your portfolio'}}&body={{ 'Contact Info: ' + phone + '<br><br>' + body + '<br><br><b>' + name +'</b>' }}">
+                                <button type="button" class="btn">Send Mail</button>
+                            </a>
+
+                                    <button id="clear_btn" type="reset" class="btn">Clear</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="frameworks/angular.min.js"></script>
+    <script src="scripts.js"></script>
+
+    <!--script src="frameworks/particles.js"></script>
+<script src="frameworks/particles_white.js"></script-->
+
+</body>
+
+</html>
